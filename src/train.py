@@ -71,6 +71,6 @@ y_pred = predictor.predict(X_test)
 # Results visualization
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("F1 Score:", f1_score(y_test, y_pred, average='weighted'))
-report = classification_report(y_test, y_pred, output_dict=True)
 print(classification_report(y_test, y_pred, target_names=['Not constructive', 'Constructive']))
 print(confusion_matrix(y_test, y_pred))
+report = classification_report(y_test, y_pred, output_dict=True)
