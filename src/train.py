@@ -74,3 +74,6 @@ print("F1 Score:", f1_score(y_test, y_pred, average='weighted'))
 print(classification_report(y_test, y_pred, target_names=['Not constructive', 'Constructive']))
 print(confusion_matrix(y_test, y_pred))
 report = classification_report(y_test, y_pred, output_dict=True)
+
+# Saving
+#predictor.save(PATH_MODELS + 'distilbert-construct')
